@@ -1,0 +1,130 @@
+@import "https://unpkg.com/ress/dist/ress.min.css";
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    font-size: 1.6em;
+    line-height: 1;
+    color: #212121;
+    background: #efefef;
+}
+
+/*=============
+*/
+/*   全体
+*/
+/*================*/
+main{
+    width: 1000px;
+    padding: 80px;
+    margin: 100px auto;
+    background: #fff;
+}
+/*=================
+/*section 内-----------*/
+section h2{
+    width: 100%;
+}
+section p{
+    padding: 0 1em;
+    line-height: 1.8;
+}
+section ul {
+    padding: 0 2em;
+}
+section li {
+    line-height: 1.8;
+}
+section img{
+    display: block;
+    margin: 8px 0;
+}
+section +section {
+    margin-top: 40px;
+}
+section iframe.youtube {
+    aspect-ratio: 16/9;
+}
+/*-----------
+/*  左右分割
+---------*/
+.left-area,
+.right-area {
+    width: 50%;
+}
+/*----------
+/*  見出し
+-------------*/
+h2 {
+    line-height: 2;
+    text-align: center;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-bottom: 1em;
+}
+
+h3 {
+    line-height: 1.5;
+    padding-left: 0.5em;
+    border-left: 8px solid #000;
+    border-bottom: 0.5em;
+}
+h3:nth-of-type(n + 2) {
+    margin-top: 1.5em;
+}
+/*=================
+*/
+/*   section #profile
+*/
+/*========*/
+#profile {
+    display: flex;
+    flex-wrap: wrap;
+}
+#profile img {
+    display: block;
+    margin: auto;
+}
+#profile .my-name {
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0.5em 0 1em;
+}
+/*=============
+*/
+/*   section#favorite
+*/
+/*=======*/
+#favorite {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fav-color {
+    color: gray;
+}
+/*============
+*/
+/*   section#link
+*/
+/*===============*/
+#link a {
+    text-align: center;
+}
+#link a {
+    font-size: 3em;
+    color: inherit;
+}
+#link a:nth-of-type(n + 2) {
+    margin-left: 0.5em;
+}
+#link a i {
+    transition: 0.5s;
+}
